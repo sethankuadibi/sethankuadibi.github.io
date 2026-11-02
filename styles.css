@@ -424,21 +424,42 @@ a {
   margin-top: 1.25rem;
 }
 
-.more-work-heading {
-  display: grid;
-  gap: 0.55rem;
-  margin: 3.25rem 0 1.25rem;
-  padding-top: 1.5rem;
+.work-group-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 3.25rem 0 1.15rem;
+  padding-top: 1.35rem;
   border-top: 1px solid var(--line);
 }
 
-.more-work-heading h3 {
+.section-heading + .work-group-heading {
+  margin-top: 1.8rem;
+}
+
+.group-marker {
+  display: grid;
+  flex: 0 0 2.15rem;
+  width: 2.15rem;
+  height: 2.15rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.work-group-heading > div {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.work-group-heading p:last-child {
   margin: 0;
-  max-width: 22ch;
-  font-family: "Newsreader", serif;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-  font-weight: 600;
-  line-height: 1.05;
+  max-width: 62ch;
+  color: var(--muted);
+  line-height: 1.55;
 }
 
 .more-work-grid {
@@ -453,6 +474,13 @@ a {
   border: 1px solid var(--line);
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.72);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.work-card:hover {
+  transform: translateY(-3px);
+  border-color: #b7cbe0;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.07);
 }
 
 .work-card h3 {
@@ -565,7 +593,8 @@ a {
   .reveal,
   .button,
   .text-link,
-  .nav a {
+  .nav a,
+  .work-card {
     opacity: 1;
     transform: none;
     transition: none;
@@ -630,5 +659,10 @@ a {
 
   .hero h1 {
     font-size: clamp(2.7rem, 13vw, 4.2rem);
+  }
+
+  .work-group-heading {
+    gap: 0.75rem;
+    margin-top: 2.5rem;
   }
 }
