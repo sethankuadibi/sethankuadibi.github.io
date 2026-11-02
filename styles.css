@@ -290,6 +290,7 @@ a {
 
 .capabilities-grid,
 .project-grid,
+.more-work-grid,
 .skills-grid {
   display: grid;
   gap: 1rem;
@@ -423,6 +424,54 @@ a {
   margin-top: 1.25rem;
 }
 
+.more-work-heading {
+  display: grid;
+  gap: 0.55rem;
+  margin: 3.25rem 0 1.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.more-work-heading h3 {
+  margin: 0;
+  max-width: 22ch;
+  font-family: "Newsreader", serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.more-work-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.work-card h3 {
+  margin: 0.9rem 0 0.5rem;
+  font-size: 1.22rem;
+}
+
+.work-card > p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.work-card .project-link {
+  margin-top: auto;
+  padding-top: 0.4rem;
+  align-self: flex-start;
+}
+
 .split-section {
   display: grid;
   grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
@@ -528,6 +577,7 @@ a {
   .split-section,
   .capabilities-grid,
   .project-grid,
+  .more-work-grid,
   .summary-strip,
   .skills-grid,
   .timeline-item {
