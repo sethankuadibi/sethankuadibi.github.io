@@ -428,13 +428,27 @@ a {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  margin: 3.25rem 0 1.15rem;
-  padding-top: 1.35rem;
-  border-top: 1px solid var(--line);
+  margin: 0 0 1.35rem;
+  padding-bottom: 1.15rem;
+  border-bottom: 1px solid var(--line);
 }
 
-.section-heading + .work-group-heading {
-  margin-top: 1.8rem;
+.project-collection {
+  margin-top: 1.25rem;
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: rgba(238, 243, 249, 0.65);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.045);
+}
+
+.project-collection + .project-collection {
+  margin-top: 1.5rem;
+}
+
+.project-collection-featured {
+  background: linear-gradient(145deg, rgba(217, 233, 247, 0.72), rgba(255, 255, 255, 0.72));
+  border-color: #c6d9ea;
 }
 
 .group-marker {
@@ -443,7 +457,7 @@ a {
   width: 2.15rem;
   height: 2.15rem;
   place-items: center;
-  border-radius: 50%;
+  border-radius: 9px;
   background: var(--accent);
   color: #ffffff;
   font-size: 0.78rem;
@@ -473,7 +487,7 @@ a {
   padding: 1.4rem;
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.72);
+  background: var(--surface);
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
@@ -663,6 +677,10 @@ a {
 
   .work-group-heading {
     gap: 0.75rem;
-    margin-top: 2.5rem;
+  }
+
+  .project-collection {
+    padding: 1rem;
+    border-radius: 20px;
   }
 }
