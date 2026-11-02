@@ -141,7 +141,13 @@
           </div>
 
           <div class="projects-content">
-          <div class="project-collection project-collection-featured reveal">
+          <div class="project-tabs reveal" role="tablist" aria-label="Project categories">
+            <button class="project-tab is-active" id="tab-ml" type="button" role="tab" aria-selected="true" aria-controls="panel-ml" tabindex="0">Machine learning</button>
+            <button class="project-tab" id="tab-products" type="button" role="tab" aria-selected="false" aria-controls="panel-products" tabindex="-1">Product platforms</button>
+            <button class="project-tab" id="tab-interfaces" type="button" role="tab" aria-selected="false" aria-controls="panel-interfaces" tabindex="-1">Interfaces &amp; tools</button>
+          </div>
+
+          <div class="project-collection project-collection-featured reveal" id="panel-ml" role="tabpanel" aria-labelledby="tab-ml">
           <div class="work-group-heading">
             <span class="group-marker" aria-hidden="true">A</span>
             <div>
@@ -216,7 +222,7 @@
           </div>
           </div>
 
-          <div class="project-collection reveal">
+          <div class="project-collection reveal" id="panel-products" role="tabpanel" aria-labelledby="tab-products" hidden>
           <div class="work-group-heading">
             <span class="group-marker" aria-hidden="true">B</span>
             <div>
@@ -244,7 +250,7 @@
           </div>
           </div>
 
-          <div class="project-collection reveal">
+          <div class="project-collection reveal" id="panel-interfaces" role="tabpanel" aria-labelledby="tab-interfaces" hidden>
           <div class="work-group-heading">
             <span class="group-marker" aria-hidden="true">C</span>
             <div>

@@ -728,6 +728,97 @@ a {
   transform: translate(3px, -3px);
 }
 
+.project-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.4rem;
+  overflow: visible;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  scrollbar-width: none;
+}
+
+.project-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.project-tab {
+  flex: 1 1 180px;
+  min-height: 44px;
+  padding: 0.68rem 1rem;
+  border: 0;
+  border-radius: 11px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 160ms ease, color 160ms ease, box-shadow 160ms ease;
+}
+
+.project-tab:hover {
+  color: var(--accent-strong);
+  background: var(--surface-alt);
+}
+
+.project-tab.is-active {
+  color: #ffffff;
+  background: var(--accent);
+  box-shadow: 0 7px 16px rgba(15, 76, 129, 0.2);
+}
+
+.projects-content #panel-ml .project-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.projects-content #panel-ml .project-grid .project-card:first-child {
+  display: flex;
+  grid-column: auto;
+  padding: 1.4rem;
+}
+
+.projects-content #panel-ml .project-grid .project-card:first-child h3 {
+  margin-top: 0.9rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.28rem;
+  letter-spacing: 0;
+}
+
+.projects-content #panel-ml .project-grid .project-card:first-child > p:not(.project-detail) {
+  margin: 0;
+}
+
+.projects-content #panel-ml .project-grid .project-card:first-child .project-metrics {
+  align-self: auto;
+  margin: 1.15rem 0;
+}
+
+.projects-content #panel-ml .project-grid .project-card:first-child .project-metrics p {
+  min-height: 0;
+  background: var(--surface-alt);
+}
+
+.projects-content #panel-ml .project-grid .project-card:first-child .project-metrics strong {
+  color: var(--accent-strong);
+}
+
+.projects-content #panel-ml .project-grid .project-card:first-child .project-metrics span {
+  color: var(--muted);
+}
+
+.projects-content #panel-ml .project-grid .project-card:first-child .project-detail {
+  padding-top: 0;
+  border-top: 0;
+}
+
+[role="tabpanel"][hidden] {
+  display: none;
+}
+
 .projects-content .project-link {
   margin-top: auto;
   padding-top: 1rem;
@@ -930,7 +1021,8 @@ a {
 
   .projects-layout > .section-heading,
   .projects-content .project-grid,
-  .projects-content .more-work-grid {
+  .projects-content .more-work-grid,
+  .projects-content #panel-ml .project-grid {
     grid-template-columns: 1fr;
   }
 
