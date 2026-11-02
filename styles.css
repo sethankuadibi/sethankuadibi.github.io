@@ -347,6 +347,11 @@ a {
 
 .projects-content {
   min-width: 0;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
 .project-grid {
@@ -452,21 +457,61 @@ a {
 }
 
 .project-collection {
-  margin-top: 1.25rem;
-  padding: 1.35rem;
-  border: 1px solid var(--line);
-  border-radius: 26px;
-  background: rgba(238, 243, 249, 0.65);
-  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.045);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .project-collection + .project-collection {
-  margin-top: 1.5rem;
+  margin-top: 0;
 }
 
 .project-collection-featured {
-  background: linear-gradient(145deg, rgba(217, 233, 247, 0.72), rgba(255, 255, 255, 0.72));
-  border-color: #c6d9ea;
+  background: transparent;
+  border-color: transparent;
+}
+
+.projects-content .work-group-heading {
+  display: none;
+}
+
+.projects-content .project-grid,
+.projects-content .more-work-grid {
+  display: block;
+}
+
+.projects-content .project-card,
+.projects-content .work-card {
+  display: block;
+  padding: 1.4rem 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+}
+
+.projects-content .project-collection:first-child article:first-of-type {
+  border-top: 0;
+}
+
+.projects-content .project-card::before {
+  display: none;
+}
+
+.projects-content .work-card:hover {
+  border-color: var(--line);
+  box-shadow: none;
+  transform: none;
+}
+
+.projects-content .project-link {
+  margin-top: 0.9rem;
+  padding-top: 0;
 }
 
 .group-marker {
@@ -700,8 +745,12 @@ a {
   }
 
   .project-collection {
-    padding: 1rem;
-    border-radius: 20px;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .projects-content {
+    padding: 0.4rem 1.15rem;
   }
 
 }
