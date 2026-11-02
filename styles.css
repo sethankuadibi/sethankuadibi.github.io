@@ -331,6 +331,38 @@ a {
   letter-spacing: -0.02em;
 }
 
+.projects-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: 1.5rem;
+  padding: 1.75rem;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.projects-intro h2 {
+  max-width: 13ch;
+  margin: 0.55rem 0 0;
+  font-family: "Newsreader", serif;
+  font-size: clamp(2.25rem, 4.2vw, 3.7rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 0.98;
+}
+
+.projects-intro-copy {
+  margin: 0;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
 .project-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -641,6 +673,16 @@ a {
   .timeline-item {
     gap: 0.5rem;
   }
+
+  .projects-intro {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    align-items: start;
+  }
+
+  .projects-intro h2 {
+    max-width: none;
+  }
 }
 
 @media (max-width: 640px) {
@@ -681,6 +723,11 @@ a {
 
   .project-collection {
     padding: 1rem;
+    border-radius: 20px;
+  }
+
+  .projects-intro {
+    padding: 1.25rem;
     border-radius: 20px;
   }
 }
