@@ -385,6 +385,44 @@ a {
   margin: 0;
 }
 
+.project-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 1.15rem 0;
+}
+
+.project-metrics p {
+  display: grid;
+  gap: 0.18rem;
+  margin: 0;
+  padding: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface-alt);
+}
+
+.project-metrics strong {
+  color: var(--accent-strong);
+  font-family: "Newsreader", serif;
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.project-metrics span {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.project-link {
+  display: inline-flex;
+  gap: 0.35rem;
+  margin-top: 1.25rem;
+}
+
 .split-section {
   display: grid;
   grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
