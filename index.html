@@ -1,411 +1,792 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seth Adibi Anku | Full-Stack &amp; Machine Learning Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seth Adibi Anku — Software Engineer, Systems & Applied ML</title>
     <meta
       name="description"
-      content="Portfolio of Seth Adibi Anku, a full-stack and machine learning engineer building responsive interfaces, backend systems, AI products, and reliable technical workflows."
-    />
+      content="Seth Adibi Anku is a software engineer in Accra, Ghana, building interfaces, backend services, and applied machine-learning systems that hold up under real use.">
     <meta
       name="keywords"
-      content="Seth Adibi Anku, frontend engineer, full-stack developer, machine learning engineer, React, TypeScript, Python, Ghana, portfolio"
-    />
-    <meta name="author" content="Seth Adibi Anku" />
-    <meta property="og:title" content="Seth Adibi Anku | Full-Stack &amp; Machine Learning Engineer" />
+      content="Seth Adibi Anku, software engineer, full-stack developer, machine learning engineer, React, TypeScript, Python, FastAPI, Ghana, portfolio">
+    <meta name="author" content="Seth Adibi Anku">
+    <link rel="canonical" href="https://sethankuadibi.github.io/">
+    <meta name="theme-color" content="#e8edf0">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sethankuadibi.github.io/">
+    <meta property="og:title" content="Seth Adibi Anku — Software Engineer, Systems & Applied ML">
     <meta
       property="og:description"
-      content="Frontend, backend, machine learning, AI workflow, and technical delivery projects built for real users and operational needs."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sethankuadibi.github.io/" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      content="Interfaces, backend services, and applied machine learning built past the happy path.">
+    <meta property="og:image" content="https://sethankuadibi.github.io/assets/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Seth Adibi Anku — Software Engineer, Systems & Applied ML">
+    <meta
+      name="twitter:description"
+      content="Interfaces, backend services, and applied machine learning built past the happy path.">
+    <meta name="twitter:image" content="https://sethankuadibi.github.io/assets/og.png">
+
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62.5..125,400..800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Seth Adibi Anku",
+        "url": "https://sethankuadibi.github.io/",
+        "email": "mailto:sethankuadibi@gmail.com",
+        "jobTitle": "Software Engineer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Accra",
+          "addressCountry": "Ghana"
+        },
+        "sameAs": [
+          "https://github.com/sethankuadibi",
+          "https://www.linkedin.com/in/anku-seth-570519371"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Ghana Communication Technology University"
+        },
+        "knowsAbout": [
+          "React",
+          "TypeScript",
+          "Python",
+          "FastAPI",
+          "PostgreSQL",
+          "Machine Learning",
+          "Explainable AI",
+          "Distributed Tracing"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div class="site-shell">
-      <header class="topbar">
-        <a class="wordmark" href="#home">Seth Adibi Anku</a>
-        <nav class="nav" aria-label="Primary">
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </nav>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <div class="site" id="top">
+      <div class="reg-marks" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <header class="site-header">
+        <div class="wrap header-inner">
+          <a class="wordmark" href="#top">
+            <span class="wordmark-mark" aria-hidden="true">SA</span>
+            <span class="wordmark-text">Seth Adibi Anku</span>
+          </a>
+          <nav class="nav" aria-label="Primary">
+            <a href="#work">Work</a>
+            <a href="#approach">Approach</a>
+            <a href="#experience">Experience</a>
+            <a href="#toolkit">Toolkit</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="header-meta">
+            <span class="header-sheet mono">Sheet A-01</span>
+            <a class="header-cv mono" href="./assets/seth-adibi-anku-cv.pdf" download>
+              CV <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
       </header>
 
-      <main id="home">
-        <section class="hero section">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Frontend • backend • machine learning • Accra, Ghana</p>
-            <h1>
-              I build digital products from interface to intelligence.
-            </h1>
-            <p class="hero-text">
-              I design responsive frontend experiences, develop backend-connected
-              systems, and build machine learning solutions that move from careful
-              experimentation to practical use.
-            </p>
-            <ul class="hero-list" aria-label="Core capabilities">
-              <li>Build responsive interfaces with React, TypeScript, HTML, and CSS</li>
-              <li>Connect products to Python APIs, databases, and operational workflows</li>
-              <li>Develop and evaluate ML systems with clear, evidence-based results</li>
-            </ul>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#projects">View projects</a>
-              <a class="button button-secondary" href="./assets/seth-adibi-anku-cv.pdf" download>
-                Download CV
-              </a>
+      <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="wrap">
+            <div class="hero-meta mono" aria-hidden="true">
+              <span>Drawing A-01</span>
+              <span>Sheet 1 of 1</span>
+              <span>Rev 02</span>
+              <span>2026</span>
             </div>
-          </div>
 
-          <aside class="hero-panel reveal" aria-label="Profile summary">
-            <div class="panel-card">
-              <p class="panel-label">Current focus</p>
-              <p class="panel-value">Frontend products, backend integration, applied ML, and AI-enabled workflows.</p>
-            </div>
-            <div class="panel-card">
-              <p class="panel-label">Strengths</p>
-              <p class="panel-value">React, TypeScript, Python, APIs, model evaluation, Docker, debugging, and product delivery.</p>
-            </div>
-            <div class="panel-card">
-              <p class="panel-label">Professional base</p>
-              <p class="panel-value">
-                MSc Computer Science, Ghana Communication Technology University, with hands-on experience across product, support, and operations.
-              </p>
-            </div>
-          </aside>
-        </section>
-
-        <section class="summary-strip reveal" aria-label="Professional summary">
-          <article class="summary-item">
-            <p class="summary-label">Core stack</p>
-            <p class="summary-value">React, TypeScript, Python, FastAPI</p>
-          </article>
-          <article class="summary-item">
-            <p class="summary-label">Engineering</p>
-            <p class="summary-value">Frontend, backend, APIs, databases</p>
-          </article>
-          <article class="summary-item">
-            <p class="summary-label">Intelligence &amp; operations</p>
-            <p class="summary-value">ML, AI workflows, Docker, support</p>
-          </article>
-        </section>
-
-        <section class="section thesis reveal">
-          <p class="thesis-kicker">Professional profile</p>
-          <p class="thesis-text">
-            I combine thoughtful interfaces, dependable system integration, and
-            evidence-led machine learning to build products people can actually use.
-          </p>
-        </section>
-
-        <section class="section capabilities-section">
-          <div class="capabilities-grid">
-            <article class="capability-card reveal">
-              <p class="panel-label">Interface</p>
-              <h3>Frontend experiences</h3>
-              <p>Responsive, accessible interfaces and reusable components that make complex products clear and easy to use.</p>
-            </article>
-            <article class="capability-card reveal">
-              <p class="panel-label">Systems</p>
-              <h3>Backend and product delivery</h3>
-              <p>APIs, databases, services, and deployment workflows that connect interfaces to dependable product logic.</p>
-            </article>
-            <article class="capability-card reveal">
-              <p class="panel-label">Intelligence</p>
-              <h3>AI, ML, and technical operations</h3>
-              <p>Model development, explainability, prompting, Docker, website management, debugging, and technical support.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section projects-layout" id="projects">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Project portfolio</p>
-            <h2>Work across interfaces, systems, and machine learning.</h2>
-            <p class="section-heading-copy">Selected work across model development, product engineering, data interfaces, and technical delivery.</p>
-          </div>
-
-          <div class="projects-content">
-          <div class="project-tabs reveal" role="tablist" aria-label="Project categories">
-            <button class="project-tab is-active" id="tab-ml" type="button" role="tab" aria-selected="true" aria-controls="panel-ml" tabindex="0">Machine learning</button>
-            <button class="project-tab" id="tab-products" type="button" role="tab" aria-selected="false" aria-controls="panel-products" tabindex="-1">Product platforms</button>
-            <button class="project-tab" id="tab-interfaces" type="button" role="tab" aria-selected="false" aria-controls="panel-interfaces" tabindex="-1">Interfaces &amp; tools</button>
-          </div>
-
-          <div class="project-collection project-collection-featured reveal" id="panel-ml" role="tabpanel" aria-labelledby="tab-ml">
-          <div class="work-group-heading">
-            <span class="group-marker" aria-hidden="true">A</span>
-            <div>
-              <p class="eyebrow">Machine learning case studies</p>
-              <p>Research-led builds with measured results and documented model decisions.</p>
-            </div>
-          </div>
-
-          <div class="project-grid">
-            <article class="project-card">
-              <div class="project-meta"><span>Work category</span><span>Computer vision</span></div>
-              <h3>Brain Tumor Classification from MRI</h3>
-              <p>
-                Compared a HOG–PCA–SVM pipeline with a baseline CNN on the same
-                MRI dataset to study accuracy, model behaviour, and practical suitability.
-              </p>
-              <div class="project-metrics" aria-label="Brain tumor project results">
-                <p><strong>92.81%</strong><span>SVM accuracy</span></p>
-                <p><strong>88.75%</strong><span>CNN accuracy</span></p>
+            <div class="hero-grid">
+              <div class="hero-copy">
+                <p class="eyebrow mono">Seth Adibi Anku · Software engineer · Accra, Ghana</p>
+                <h1 id="hero-title">I build systems that hold up.</h1>
+                <p class="lead">
+                  Full-stack engineer and computer scientist working across interfaces,
+                  services, and applied machine learning. I care about the quiet failure
+                  modes — the duplicate retry, the span that arrives late, the model that
+                  meets unfamiliar data.
+                </p>
+                <div class="hero-actions">
+                  <a class="btn btn-primary" href="#work">View the register</a>
+                  <a class="btn" href="./assets/seth-adibi-anku-cv.pdf" download>Download CV</a>
+                </div>
+                <dl class="title-block">
+                  <div>
+                    <dt class="mono">Drawn by</dt>
+                    <dd>Seth Adibi Anku</dd>
+                  </div>
+                  <div>
+                    <dt class="mono">Location</dt>
+                    <dd>Accra, Ghana</dd>
+                  </div>
+                  <div>
+                    <dt class="mono">Scale</dt>
+                    <dd>Interface → infrastructure</dd>
+                  </div>
+                  <div>
+                    <dt class="mono">Status</dt>
+                    <dd><span class="dot" aria-hidden="true"></span> Open to engineering roles</dd>
+                  </div>
+                </dl>
               </div>
-              <ul class="tag-list" aria-label="Brain tumor classification stack">
-                <li>TensorFlow</li><li>scikit-learn</li><li>HOG</li><li>PCA</li><li>Streamlit</li>
+
+              <figure class="schematic-figure">
+                <div class="schematic">
+                  <div class="schematic-head mono">
+                    <span>Fig. A-01</span>
+                    <span>System map</span>
+                  </div>
+
+                  <svg
+                    class="schematic-svg"
+                    viewBox="0 0 480 410"
+                    role="img"
+                    aria-labelledby="schematic-title schematic-desc"
+                  >
+                    <title id="schematic-title">System map from interface to evidence</title>
+                    <desc id="schematic-desc">
+                      An illustrative technical drawing connecting interface, API, data,
+                      model, and support layers. A redline note reads: evidence picks the model.
+                    </desc>
+
+                    <g class="wires" aria-hidden="true">
+                      <path class="wire" pathLength="1" d="M166 57 H302 M302 50 V64" style="--d: 0ms" />
+                      <path class="wire" pathLength="1" d="M91 86 V188 M84 188 H98" style="--d: 90ms" />
+                      <path class="wire" pathLength="1" d="M389 86 V188 M382 188 H396" style="--d: 150ms" />
+                      <path class="wire" pathLength="1" d="M166 229 H302 M302 222 V236" style="--d: 240ms" />
+                      <path
+                        class="wire"
+                        pathLength="1"
+                        d="M240 322 V290 M91 290 H389 M91 290 V258 M389 290 V258"
+                        style="--d: 330ms"
+                      />
+                      <circle class="junction" cx="240" cy="290" r="2.5" />
+                      <circle class="junction" cx="91" cy="290" r="2.5" />
+                      <circle class="junction" cx="389" cy="290" r="2.5" />
+                    </g>
+
+                    <g class="wire-labels" aria-hidden="true">
+                      <text class="wire-label" x="240" y="50" text-anchor="middle">REQ / RES</text>
+                      <text class="wire-label" x="240" y="72" text-anchor="middle">0 — 214ms</text>
+                      <text class="wire-label" x="99" y="145">EVAL</text>
+                      <text class="wire-label" x="397" y="145">STATE</text>
+                      <text class="wire-label" x="240" y="222" text-anchor="middle">PREDICTIONS</text>
+                      <text class="wire-label" x="248" y="284">TRACES</text>
+                    </g>
+
+                    <g class="node">
+                      <rect class="node-box" x="16" y="28" width="150" height="58" />
+                      <rect class="node-tab" x="16" y="28" width="5" height="58" />
+                      <text class="node-title" x="30" y="54">INTERFACE</text>
+                      <text class="node-sub" x="30" y="72">React · Next.js</text>
+                    </g>
+
+                    <g class="node">
+                      <rect class="node-box" x="314" y="28" width="150" height="58" />
+                      <rect class="node-tab" x="314" y="28" width="5" height="58" />
+                      <text class="node-title" x="328" y="54">API</text>
+                      <text class="node-sub" x="328" y="72">FastAPI · REST</text>
+                    </g>
+
+                    <g class="node">
+                      <rect class="node-box" x="16" y="200" width="150" height="58" />
+                      <rect class="node-tab" x="16" y="200" width="5" height="58" />
+                      <text class="node-title" x="30" y="226">MODEL</text>
+                      <text class="node-sub" x="30" y="244">XGBoost · CNN</text>
+                    </g>
+
+                    <g class="node">
+                      <rect class="node-box" x="314" y="200" width="150" height="58" />
+                      <rect class="node-tab" x="314" y="200" width="5" height="58" />
+                      <text class="node-title" x="328" y="226">DATA</text>
+                      <text class="node-sub" x="328" y="244">PostgreSQL · SQLite</text>
+                    </g>
+
+                    <g class="node">
+                      <rect class="node-box" x="165" y="322" width="150" height="54" />
+                      <rect class="node-tab" x="165" y="322" width="5" height="54" />
+                      <text class="node-title" x="179" y="347">SUPPORT</text>
+                      <text class="node-sub" x="179" y="365">Windows · Networks</text>
+                    </g>
+
+                    <g class="redline" aria-hidden="true">
+                      <path d="M172 192 h 8 v 74 h -8" />
+                      <path d="M180 229 H 218 V 196 H 224" />
+                      <text x="228" y="192">EVIDENCE PICKS THE MODEL</text>
+                    </g>
+
+                    <g class="dimension" aria-hidden="true">
+                      <path d="M16 392 H464 M16 386 V398 M464 386 V398" />
+                      <text x="240" y="386" text-anchor="middle">SCOPE — INTERFACE TO EVIDENCE</text>
+                    </g>
+                  </svg>
+
+                  <ol class="schematic-ledger mono" aria-label="System map">
+                    <li><span class="ledger-key">01</span><span class="ledger-name">INTERFACE</span><span class="ledger-sub">React · Next.js</span></li>
+                    <li><span class="ledger-key">02</span><span class="ledger-name">API</span><span class="ledger-sub">FastAPI · REST</span></li>
+                    <li><span class="ledger-key">03</span><span class="ledger-name">DATA</span><span class="ledger-sub">PostgreSQL · SQLite</span></li>
+                    <li><span class="ledger-key">04</span><span class="ledger-name">MODEL</span><span class="ledger-sub">XGBoost · CNN</span></li>
+                    <li><span class="ledger-key">05</span><span class="ledger-name">SUPPORT</span><span class="ledger-sub">Windows · Networks</span></li>
+                  </ol>
+                  <p class="ledger-redline mono">↳ Evidence picks the model</p>
+
+                  <p class="schematic-foot mono">
+                    Illustrative — based on shipped work, not a live system.
+                  </p>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="section work" id="work" aria-labelledby="work-title">
+          <div class="wrap">
+            <div class="section-tag">
+              <span class="tag-index mono">01</span>
+              <span class="tag-name mono">Selected work — register</span>
+              <span class="tag-rule" aria-hidden="true"></span>
+              <span class="tag-meta mono">06 items</span>
+            </div>
+
+            <div class="section-head">
+              <h2 id="work-title">Six builds across systems, models, and interfaces.</h2>
+              <p class="section-note">
+                Public source where it exists. Measured results where they matter.
+              </p>
+            </div>
+
+            <div class="register-head mono" aria-hidden="true">
+              <span>Ref</span>
+              <span>Project / description</span>
+              <span>Type</span>
+              <span>Evidence</span>
+            </div>
+
+            <ol class="register">
+              <li class="register-row reveal">
+                <p class="row-ref mono">A-01</p>
+                <div class="row-main">
+                  <h3 class="row-title">
+                    <a class="row-link" href="https://github.com/sethankuadibi/traced" target="_blank" rel="noreferrer">
+                      Traced <span class="row-arrow" aria-hidden="true">↗</span>
+                    </a>
+                  </h3>
+                  <p class="row-desc">
+                    A span-ingestion API for distributed traces. Accepts children before
+                    parents, stores them atomically under an async lock, and evicts
+                    continuously from a rolling window while serving root-aware summaries.
+                  </p>
+                  <p class="row-stack mono">Python · FastAPI · Async · Docker</p>
+                </div>
+                <p class="row-type mono">Systems<br>Observability<br>2026</p>
+                <div class="row-evidence">
+                  <p class="evidence-label mono">Evidence</p>
+                  <dl class="spec">
+                    <div><dt class="mono">Ordering</dt><dd>out-of-order assembly</dd></div>
+                    <div><dt class="mono">Eviction</dt><dd>rolling window</dd></div>
+                    <div><dt class="mono">Writes</dt><dd>atomic batches</dd></div>
+                  </dl>
+                </div>
+              </li>
+
+              <li class="register-row reveal">
+                <p class="row-ref mono">A-02</p>
+                <div class="row-main">
+                  <h3 class="row-title">
+                    <a class="row-link" href="https://github.com/sethankuadibi/payment-gateway" target="_blank" rel="noreferrer">
+                      FicMart Payment Gateway <span class="row-arrow" aria-hidden="true">↗</span>
+                    </a>
+                  </h3>
+                  <p class="row-desc">
+                    A gateway between an e-commerce order service and a banking partner.
+                    It owns the receipt, enforces a strict payment lifecycle, and makes
+                    every operation safe to retry.
+                  </p>
+                  <p class="row-stack mono">Python · FastAPI · SQLite · Docker</p>
+                </div>
+                <p class="row-type mono">Systems<br>Fintech<br>2026</p>
+                <div class="row-evidence">
+                  <p class="evidence-label mono">Evidence</p>
+                  <dl class="spec">
+                    <div><dt class="mono">Lifecycle</dt><dd>5 states</dd></div>
+                    <div><dt class="mono">Retries</dt><dd>idempotent</dd></div>
+                    <div><dt class="mono">Receipts</dt><dd>durable</dd></div>
+                  </dl>
+                </div>
+              </li>
+
+              <li class="register-row reveal">
+                <p class="row-ref mono">A-03</p>
+                <div class="row-main">
+                  <h3 class="row-title">
+                    <a class="row-link" href="https://github.com/sethankuadibi/tweet-audit" target="_blank" rel="noreferrer">
+                      Tweet Audit <span class="row-arrow" aria-hidden="true">↗</span>
+                    </a>
+                  </h3>
+                  <p class="row-desc">
+                    Reviews an exported X archive against custom criteria with Gemini,
+                    then writes a CSV for human review. Built around bounded concurrency,
+                    jittered retries, and resumable checkpoints.
+                  </p>
+                  <p class="row-stack mono">Python · Gemini · Streamlit · Docker</p>
+                </div>
+                <p class="row-type mono">Systems<br>AI tooling<br>2026</p>
+                <div class="row-evidence">
+                  <p class="evidence-label mono">Evidence</p>
+                  <dl class="spec">
+                    <div><dt class="mono">Concurrency</dt><dd>bounded</dd></div>
+                    <div><dt class="mono">Resume</dt><dd>checkpointed</dd></div>
+                    <div><dt class="mono">Output</dt><dd>CSV review</dd></div>
+                  </dl>
+                </div>
+              </li>
+
+              <li class="register-row reveal">
+                <p class="row-ref mono">A-04</p>
+                <div class="row-main">
+                  <h3 class="row-title">
+                    EduShield AI <span class="stamp mono">Private</span>
+                  </h3>
+                  <p class="row-desc">
+                    Explainable intrusion detection trained on CICIDS2017. Four
+                    classifiers compared and leakage-checked, paired with SHAP
+                    explanations so an analyst can see why traffic was flagged.
+                  </p>
+                  <p class="row-stack mono">XGBoost · SHAP · FastAPI · PostgreSQL</p>
+                </div>
+                <p class="row-type mono">Applied ML<br>Security<br>2025</p>
+                <div class="row-evidence">
+                  <p class="evidence-label mono">Evidence</p>
+                  <dl class="spec">
+                    <div><dt class="mono">Accuracy</dt><dd>99.94% · XGBoost</dd></div>
+                    <div><dt class="mono">F1</dt><dd>0.9983</dd></div>
+                    <div><dt class="mono">Test rows</dt><dd>498,906</dd></div>
+                  </dl>
+                </div>
+              </li>
+
+              <li class="register-row reveal">
+                <p class="row-ref mono">A-05</p>
+                <div class="row-main">
+                  <h3 class="row-title">
+                    NeuroScan AI <span class="stamp mono">Private</span>
+                  </h3>
+                  <p class="row-desc">
+                    Brain MRI classification research comparing a HOG–PCA–SVM pipeline
+                    with a CNN baseline on the same dataset, with an interface built for
+                    uploading and reviewing scans.
+                  </p>
+                  <p class="row-stack mono">TensorFlow · scikit-learn · HOG · PCA</p>
+                </div>
+                <p class="row-type mono">Applied ML<br>Health<br>2025</p>
+                <div class="row-evidence">
+                  <p class="evidence-label mono">Evidence</p>
+                  <dl class="spec">
+                    <div><dt class="mono">SVM accuracy</dt><dd>92.81%</dd></div>
+                    <div><dt class="mono">CNN accuracy</dt><dd>88.75%</dd></div>
+                    <div><dt class="mono">Weighted F1</dt><dd>0.9267</dd></div>
+                  </dl>
+                </div>
+              </li>
+
+              <li class="register-row reveal">
+                <p class="row-ref mono">A-06</p>
+                <div class="row-main">
+                  <h3 class="row-title">
+                    CareerMatch AI <span class="stamp mono">Private</span>
+                  </h3>
+                  <p class="row-desc">
+                    CV-to-job matching that parses PDF résumés, extracts skills, and
+                    ranks 1,167 job descriptions. TF-IDF and SBERT were compared on the
+                    same eight evaluation profiles.
+                  </p>
+                  <p class="row-stack mono">TF-IDF · SBERT · FastAPI · Next.js</p>
+                </div>
+                <p class="row-type mono">Applied ML<br>NLP<br>2025</p>
+                <div class="row-evidence">
+                  <p class="evidence-label mono">Evidence</p>
+                  <dl class="spec">
+                    <div><dt class="mono">MRR</dt><dd>0.792</dd></div>
+                    <div><dt class="mono">Precision@5</dt><dd>0.675</dd></div>
+                    <div><dt class="mono">Jobs ranked</dt><dd>1,167</dd></div>
+                  </dl>
+                </div>
+              </li>
+            </ol>
+
+            <div class="schedule">
+              <div class="schedule-head">
+                <p class="mono">Secondary schedule</p>
+                <p class="mono">04 items</p>
+              </div>
+              <ul class="schedule-list">
+                <li>
+                  <p class="schedule-ref mono">B-01</p>
+                  <div>
+                    <h3>OpportunityHub Ghana</h3>
+                    <p>
+                      Authenticated discovery, saving, and application tracking for
+                      scholarships and internships, built for Ghanaian students.
+                    </p>
+                    <p class="schedule-stack mono">React · TypeScript · Supabase · PostgreSQL</p>
+                  </div>
+                </li>
+                <li>
+                  <p class="schedule-ref mono">B-02</p>
+                  <div>
+                    <h3>QGofer</h3>
+                    <p>
+                      Product engineering for an AI reputation-intelligence platform:
+                      monitoring, saved searches, alerts, reports, and sentiment views.
+                    </p>
+                    <p class="schedule-stack mono">React · Next.js · TypeScript · REST APIs</p>
+                  </div>
+                </li>
+                <li>
+                  <p class="schedule-ref mono">B-03</p>
+                  <div>
+                    <h3>Transcript Insight Dashboard</h3>
+                    <p>
+                      A filterable dashboard that turns transcript output into quality
+                      alerts, entity leaderboards, and sales opportunities.
+                    </p>
+                    <p class="schedule-stack mono">React · TypeScript · Vite · Data visualization</p>
+                  </div>
+                </li>
+                <li>
+                  <p class="schedule-ref mono">B-04</p>
+                  <div>
+                    <h3>
+                      <a class="schedule-link" href="https://github.com/sethankuadibi/seth-agent-skills" target="_blank" rel="noreferrer">
+                        Safe Frontend Agent Skills <span aria-hidden="true">↗</span>
+                      </a>
+                    </h3>
+                    <p>
+                      Sixteen reusable agent skills for targeted frontend review:
+                      accessibility, performance, forms, navigation, and consistency.
+                    </p>
+                    <p class="schedule-stack mono">Agent skills · React · Next.js · Accessibility</p>
+                  </div>
+                </li>
               </ul>
-              <p class="project-detail">
-                In this experiment, the RBF SVM achieved the stronger weighted F1
-                score (0.9267), showing why model choice should follow evidence.
-              </p>
-              <a class="text-link project-link" href="https://github.com/sethankuadibi/brain-tumor-svm-cnn-classification" target="_blank" rel="noreferrer">Explore the research <span aria-hidden="true">↗</span></a>
-            </article>
-
-            <article class="project-card">
-              <div class="project-meta"><span>Work category</span><span>Explainable AI</span></div>
-              <h3>Explainable Intrusion Detection</h3>
-              <p>
-                Trained four classifiers on CICIDS2017 network traffic and used
-                SHAP to make attack predictions understandable to analysts.
-              </p>
-              <div class="project-metrics" aria-label="Intrusion detection project results">
-                <p><strong>99.94%</strong><span>XGBoost accuracy</span></p>
-                <p><strong>0.9983</strong><span>F1 score</span></p>
-              </div>
-              <ul class="tag-list" aria-label="Intrusion detection stack">
-                <li>XGBoost</li><li>SHAP</li><li>FastAPI</li><li>Next.js</li><li>PostgreSQL</li>
-              </ul>
-              <p class="project-detail">
-                Evaluated on 498,906 untouched test rows after leakage checks;
-                XGBoost produced the best recall, F1, ROC-AUC, and false-positive rate.
-              </p>
-              <a class="text-link project-link" href="https://github.com/sethankuadibi/explainable-ml-intrusion-detection" target="_blank" rel="noreferrer">Review the system <span aria-hidden="true">↗</span></a>
-            </article>
-
-            <article class="project-card">
-              <div class="project-meta"><span>Work category</span><span>NLP recommendation</span></div>
-              <h3>CareerMatch AI</h3>
-              <p>
-                Built a CV-to-job recommendation workflow that parses PDF résumés,
-                extracts skills, and ranks 1,167 job descriptions by relevance.
-              </p>
-              <div class="project-metrics" aria-label="CareerMatch project results">
-                <p><strong>0.675</strong><span>Precision@5</span></p>
-                <p><strong>0.792</strong><span>MRR</span></p>
-              </div>
-              <ul class="tag-list" aria-label="CareerMatch stack">
-                <li>TF-IDF</li><li>SBERT</li><li>Cosine similarity</li><li>FastAPI</li><li>Next.js</li>
-              </ul>
-              <p class="project-detail">
-                Compared TF-IDF and SBERT on the same eight evaluation profiles;
-                the measured results selected TF-IDF as the default while retaining both models.
-              </p>
-              <a class="text-link project-link" href="https://github.com/sethankuadibi/careermatch-ai" target="_blank" rel="noreferrer">See how matching works <span aria-hidden="true">↗</span></a>
-            </article>
-          </div>
-          </div>
-
-          <div class="project-collection reveal" id="panel-products" role="tabpanel" aria-labelledby="tab-products" hidden>
-          <div class="work-group-heading">
-            <span class="group-marker" aria-hidden="true">B</span>
-            <div>
-              <p class="eyebrow">Product platforms</p>
-              <p>End-to-end systems that connect users, live data, and operational workflows.</p>
             </div>
           </div>
+        </section>
 
-          <div class="more-work-grid product-work-grid">
-            <article class="work-card">
-              <div class="project-meta"><span>Work category</span><span>Student platform</span></div>
-              <h3>OpportunityHub Ghana</h3>
-              <p>A React and Supabase platform for Ghanaian students to discover, save, and track scholarships, internships, fellowships, and applications.</p>
-              <ul class="tag-list" aria-label="OpportunityHub Ghana stack"><li>React</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li></ul>
-              <a class="text-link project-link" href="https://github.com/sethankuadibi/opportunityhub-ghana" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
-            </article>
+        <section class="section approach" id="approach" aria-labelledby="approach-title">
+          <div class="wrap">
+            <div class="section-tag">
+              <span class="tag-index mono">02</span>
+              <span class="tag-name mono">Approach — notes</span>
+              <span class="tag-rule" aria-hidden="true"></span>
+              <span class="tag-meta mono">03 notes</span>
+            </div>
 
-            <article class="work-card">
-              <div class="project-meta"><span>Work category</span><span>Media intelligence</span></div>
-              <h3>QGofer</h3>
-              <p>A searchable media-intelligence system with podcast ingestion, live-radio capture, transcription pipelines, scheduled processing, and authenticated accounts.</p>
-              <ul class="tag-list" aria-label="QGofer stack"><li>Django</li><li>React</li><li>Celery</li><li>Docker</li><li>PostgreSQL</li></ul>
-              <a class="text-link project-link" href="https://github.com/adwumatech-ai/qgofer" target="_blank" rel="noreferrer">View team repository <span aria-hidden="true">↗</span></a>
-            </article>
-          </div>
-          </div>
+            <div class="approach-grid">
+              <div class="approach-intro">
+                <h2 id="approach-title">Built past the happy path.</h2>
+                <p class="section-note">
+                  Most demos stop at the first successful request. The interesting work
+                  starts at the second one.
+                </p>
+              </div>
 
-          <div class="project-collection reveal" id="panel-interfaces" role="tabpanel" aria-labelledby="tab-interfaces" hidden>
-          <div class="work-group-heading">
-            <span class="group-marker" aria-hidden="true">C</span>
-            <div>
-              <p class="eyebrow">Interfaces &amp; developer tools</p>
-              <p>Focused builds spanning data review, web delivery, creative interaction, and reusable agent workflows.</p>
+              <ol class="notes">
+                <li class="reveal">
+                  <p class="note-label mono">Note 01 — Failure</p>
+                  <h3>Model the unhappy path first.</h3>
+                  <p>
+                    Retries that land twice, spans that arrive out of order, a payment
+                    captured after a timeout. I design the failure cases before the
+                    happy path, because that is where trust is won or lost.
+                  </p>
+                  <p class="redline mono">↳ modeled before the happy path</p>
+                </li>
+                <li class="reveal">
+                  <p class="note-label mono">Note 02 — Evidence</p>
+                  <h3>Let the results pick the model.</h3>
+                  <p>
+                    Baselines first, leakage checks, and reported numbers even when the
+                    simpler approach wins. In one MRI study the tuned SVM beat the CNN,
+                    and the write-up says so.
+                  </p>
+                  <p class="redline mono">↳ the simpler model won</p>
+                </li>
+                <li class="reveal">
+                  <p class="note-label mono">Note 03 — Completion</p>
+                  <h3>Finish the path through the interface.</h3>
+                  <p>
+                    An API is not done until a person can use it. I stay for the empty
+                    state, the error message, the loading state, and the support question
+                    that follows.
+                  </p>
+                  <p class="redline mono">↳ the API is not the product</p>
+                </li>
+              </ol>
             </div>
           </div>
+        </section>
 
-          <div class="more-work-grid supporting-work-grid">
+        <section class="section experience" id="experience" aria-labelledby="experience-title">
+          <div class="wrap">
+            <div class="section-tag">
+              <span class="tag-index mono">03</span>
+              <span class="tag-name mono">Experience — dimension line</span>
+              <span class="tag-rule" aria-hidden="true"></span>
+              <span class="tag-meta mono">05 roles</span>
+            </div>
 
-            <article class="work-card">
-              <div class="project-meta"><span>Work category</span><span>Business intelligence</span></div>
-              <h3>Transcript Insight Dashboard</h3>
-              <p>A filterable dashboard that turns transcript-pipeline output into quality alerts, source comparisons, entity leaderboards, financial mentions, and sales opportunities.</p>
-              <ul class="tag-list" aria-label="Transcript Insight Dashboard stack"><li>React</li><li>TypeScript</li><li>Vite</li><li>Data visualization</li></ul>
-              <a class="text-link project-link" href="https://github.com/adwumatech-ai/sales-support-dashboards" target="_blank" rel="noreferrer">View team repository <span aria-hidden="true">↗</span></a>
-            </article>
+            <div class="section-head">
+              <h2 id="experience-title">Engineering, support, and the work between them.</h2>
+              <p class="section-note">
+                From help desk to product engineering — the same instinct, applied further
+                up the stack.
+              </p>
+            </div>
 
-            <article class="work-card">
-              <div class="project-meta"><span>Work category</span><span>Web delivery</span></div>
-              <h3>Company &amp; Product Landing Pages</h3>
-              <p>Maintained and organized working web experiences for QGofer, DMG/IllumyGuide, and AdwumaTech AI, including responsive pages, analytics planning, and deployment notes.</p>
-              <ul class="tag-list" aria-label="Landing pages stack"><li>React</li><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li></ul>
-              <a class="text-link project-link" href="https://github.com/adwumatech-ai/landing-pages" target="_blank" rel="noreferrer">View team repository <span aria-hidden="true">↗</span></a>
-            </article>
-
-            <article class="work-card">
-              <div class="project-meta"><span>Work category</span><span>Developer tooling</span></div>
-              <h3>Safe Frontend Agent Skills</h3>
-              <p>A reusable collection of 16 coding-agent skills for targeted frontend reviews covering accessibility, performance, mobile layout, forms, navigation, dashboards, and design-system consistency.</p>
-              <ul class="tag-list" aria-label="Safe Frontend Agent Skills topics"><li>Agent skills</li><li>React</li><li>Next.js</li><li>Accessibility</li><li>UI review</li></ul>
-              <a class="text-link project-link" href="https://github.com/sethankuadibi/seth-agent-skills" target="_blank" rel="noreferrer">View skill package <span aria-hidden="true">↗</span></a>
-            </article>
-          </div>
-          </div>
+            <ol class="timeline">
+              <li class="timeline-row reveal">
+                <p class="timeline-date mono">Apr 2026 — Sep 2026</p>
+                <span class="timeline-line" aria-hidden="true"></span>
+                <div class="timeline-body">
+                  <h3>Software Developer</h3>
+                  <p class="timeline-org mono">AdwumaTech AI · Accra</p>
+                  <p>
+                    Built production-facing product features in React and Next.js for
+                    QGofer, integrated REST APIs and authentication flows, and fixed
+                    issues across the frontend/backend boundary.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline-row reveal">
+                <p class="timeline-date mono">Oct 2025</p>
+                <span class="timeline-line" aria-hidden="true"></span>
+                <div class="timeline-body">
+                  <h3>Data Annotator</h3>
+                  <p class="timeline-org mono">AdwumaTech AI · Accra</p>
+                  <p>
+                    Labeled and audited datasets for AI projects, flagging missing and
+                    inconsistent records against annotation guidelines.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline-row reveal">
+                <p class="timeline-date mono">Aug 2025</p>
+                <span class="timeline-line" aria-hidden="true"></span>
+                <div class="timeline-body">
+                  <h3>Data Entry Executive</h3>
+                  <p class="timeline-org mono">Docupro · Accra</p>
+                  <p>
+                    Validated and maintained database and spreadsheet records, with
+                    attention to accuracy, retrieval, and confidentiality.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline-row reveal">
+                <p class="timeline-date mono">Sep 2024 — Aug 2025</p>
+                <span class="timeline-line" aria-hidden="true"></span>
+                <div class="timeline-body">
+                  <h3>IT Support · National Service</h3>
+                  <p class="timeline-org mono">Greater Accra Regional Hospital, Ridge</p>
+                  <p>
+                    First-line support for hospital staff: workstation setup, access
+                    permissions, hardware and software faults, and confidentiality-safe
+                    handling of user data.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline-row reveal">
+                <p class="timeline-date mono">May 2023 — Jul 2023</p>
+                <span class="timeline-line" aria-hidden="true"></span>
+                <div class="timeline-body">
+                  <h3>IT Support Intern</h3>
+                  <p class="timeline-org mono">Global International Academy · Accra</p>
+                  <p>
+                    Installed and troubleshot computers, printers, projectors, Wi-Fi,
+                    and LAN connectivity for staff and students.
+                  </p>
+                </div>
+              </li>
+            </ol>
           </div>
         </section>
 
-        <section class="section experience-section" id="experience">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Experience</p>
-            <h2>Experience across engineering, AI workflows, support, and operational delivery.</h2>
-          </div>
+        <section class="section toolkit" id="toolkit" aria-labelledby="toolkit-title">
+          <div class="wrap">
+            <div class="section-tag">
+              <span class="tag-index mono">04</span>
+              <span class="tag-name mono">Toolkit — legend</span>
+              <span class="tag-rule" aria-hidden="true"></span>
+              <span class="tag-meta mono">06 groups</span>
+            </div>
 
-          <div class="timeline">
-            <article class="timeline-item reveal">
-              <p class="timeline-date">April 2026</p>
-              <div>
-                <h3>Frontend Developer • AdwumaTech AI</h3>
-                <p>
-                  Developed responsive interfaces with React, JavaScript,
-                  TypeScript, HTML, and CSS. Built reusable components,
-                  integrated APIs, supported landing page delivery, and resolved
-                  UI issues to improve user experience across product-facing systems.
-                </p>
-              </div>
-            </article>
+            <div class="section-head">
+              <h2 id="toolkit-title">The stack I reach for.</h2>
+              <p class="section-note">Chosen for the job, not for the résumé keyword.</p>
+            </div>
 
-            <article class="timeline-item reveal">
-              <p class="timeline-date">Recent focus</p>
-              <div>
-                <h3>Sales Support Engineering</h3>
-                <p>
-                  Supported business-facing technical workflows by helping turn
-                  product capabilities into usable pages, demos, support flows,
-                  and clearer customer-facing delivery.
-                </p>
+            <dl class="legend">
+              <div class="legend-row reveal">
+                <dt class="mono"><span class="legend-mark" aria-hidden="true">■</span>Languages</dt>
+                <dd>JavaScript, TypeScript, Python, SQL, PHP, HTML, CSS</dd>
               </div>
-            </article>
-
-            <article class="timeline-item reveal">
-              <p class="timeline-date">October 2025</p>
-              <div>
-                <h3>Data Annotator • AdwumaTech AI</h3>
-                <p>
-                  Labeled datasets for AI projects, reviewed inconsistencies,
-                  followed annotation standards, and maintained high-quality data outputs.
-                </p>
+              <div class="legend-row reveal">
+                <dt class="mono"><span class="legend-mark" aria-hidden="true">●</span>Frontend</dt>
+                <dd>React, Next.js, Tailwind CSS, responsive design, reusable components</dd>
               </div>
-            </article>
-
-            <article class="timeline-item reveal">
-              <p class="timeline-date">August 2025</p>
-              <div>
-                <h3>Data Entry Executive • Docupro</h3>
-                <p>
-                  Managed accurate data entry, validation, and record maintenance
-                  across databases and spreadsheets with attention to confidentiality.
-                </p>
+              <div class="legend-row reveal">
+                <dt class="mono"><span class="legend-mark" aria-hidden="true">▲</span>Backend &amp; data</dt>
+                <dd>FastAPI, Flask, Django, REST APIs, PostgreSQL, Supabase, SQLite, authentication</dd>
               </div>
-            </article>
-
-            <article class="timeline-item reveal">
-              <p class="timeline-date">September 2024 – August 2025</p>
-              <div>
-                <h3>National Service Personnel / IT Support • Greater Accra Regional Hospital</h3>
-                <p>
-                  Resolved hardware and software issues, supported user access
-                  and permissions, and kept systems running with minimal downtime.
-                </p>
+              <div class="legend-row reveal">
+                <dt class="mono"><span class="legend-mark" aria-hidden="true">◆</span>ML &amp; security</dt>
+                <dd>scikit-learn, TensorFlow, XGBoost, SHAP, SVM, CNN, model evaluation, CICIDS2017</dd>
               </div>
-            </article>
-
-            <article class="timeline-item reveal">
-              <p class="timeline-date">May 2023 – July 2023</p>
-              <div>
-                <h3>IT Support Intern • Global International Academy</h3>
-                <p>
-                  Provided technical support, maintained IT equipment, and helped
-                  with LAN, Wi-Fi, cabling, and day-to-day troubleshooting.
-                </p>
+              <div class="legend-row reveal">
+                <dt class="mono"><span class="legend-mark" aria-hidden="true">□</span>Infrastructure</dt>
+                <dd>Docker, Docker Compose, Git/GitHub, CI workflows, Linux and Windows administration</dd>
               </div>
-            </article>
+              <div class="legend-row reveal">
+                <dt class="mono"><span class="legend-mark" aria-hidden="true">+</span>Practice</dt>
+                <dd>Debugging, code review, technical documentation, user support, systems thinking</dd>
+              </div>
+            </dl>
           </div>
         </section>
 
-        <section class="section skills-section" id="skills">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Skills</p>
-            <h2>Technical strengths relevant to product, engineering, and support teams.</h2>
-          </div>
+        <section class="section about" id="about" aria-labelledby="about-title">
+          <div class="wrap">
+            <div class="section-tag">
+              <span class="tag-index mono">05</span>
+              <span class="tag-name mono">About — field notes</span>
+              <span class="tag-rule" aria-hidden="true"></span>
+              <span class="tag-meta mono">Rev 02</span>
+            </div>
 
-          <div class="skills-grid">
-            <article class="skill-card reveal">
-              <h3>Frontend engineering</h3>
-              <p>React.js, JavaScript, TypeScript, HTML, CSS, responsive design, landing pages, component-based UI.</p>
-            </article>
-            <article class="skill-card reveal">
-              <h3>Backend development</h3>
-              <p>Python, Flask, Django, PHP, API integration, application logic, and frontend-backend coordination.</p>
-            </article>
-            <article class="skill-card reveal">
-              <h3>AI and machine learning</h3>
-              <p>scikit-learn, TensorFlow, XGBoost, SVM, CNN, SHAP, model comparison, evaluation, and leakage checks.</p>
-            </article>
-            <article class="skill-card reveal">
-              <h3>Systems, operations, and support</h3>
-              <p>Docker, containers, Git, GitHub, VS Code, website management, sales support, troubleshooting, and technical operations.</p>
-            </article>
+            <div class="section-head">
+              <h2 id="about-title">Support work taught me to build for the person on the other side.</h2>
+            </div>
+
+            <div class="about-grid">
+              <div class="about-copy">
+                <p>
+                  I'm a software engineer and IT professional based in Accra. My work
+                  sits where product interfaces meet the systems behind them: React
+                  frontends, Python services, relational data, and machine-learning
+                  models that have to survive contact with real inputs.
+                </p>
+                <p>
+                  I started in IT support — workstations, access, networks, and the
+                  people using them — and that shaped how I build. I tend to ask what
+                  happens when the retry lands twice, the span arrives out of order,
+                  or the model meets data it has never seen.
+                </p>
+                <p>
+                  Currently finishing an MSc in Computer Science with an AI/ML focus at
+                  Ghana Communication Technology University. Before that, a BSc in
+                  Information Technology at the same university.
+                </p>
+              </div>
+
+              <aside class="field-notes" aria-label="Details">
+                <div>
+                  <p class="mono">Currently</p>
+                  <p>MSc Computer Science, AI/ML focus — Ghana Communication Technology University</p>
+                </div>
+                <div>
+                  <p class="mono">Before</p>
+                  <p>BSc Information Technology, GCTU, 2021–2024</p>
+                </div>
+                <div>
+                  <p class="mono">Languages</p>
+                  <p>English · Ewe · Akan · Ga</p>
+                </div>
+                <div>
+                  <p class="mono">Strengths</p>
+                  <p>Systems thinking · troubleshooting · technical writing · user support</p>
+                </div>
+              </aside>
+            </div>
           </div>
         </section>
 
-        <section class="section contact-section reveal" id="contact">
-          <p class="eyebrow">Contact</p>
-          <h2>Open to frontend, full-stack, AI, and machine learning roles.</h2>
-          <p class="contact-copy">
-            If you need someone who can build the interface, connect the system,
-            and solve the technical problem behind it, let’s talk.
-          </p>
-          <div class="contact-links">
-            <a class="button button-primary" href="mailto:sethankuadibi@gmail.com">Email me</a>
-            <a class="button button-secondary" href="https://github.com/sethankuadibi" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-            <a class="button button-secondary" href="https://www.linkedin.com/in/anku-seth-570519371" target="_blank" rel="noreferrer">
-              LinkedIn
-            </a>
+        <section class="section contact" id="contact" aria-labelledby="contact-title">
+          <div class="wrap">
+            <div class="section-tag">
+              <span class="tag-index mono">06</span>
+              <span class="tag-name mono">Contact — title block</span>
+              <span class="tag-rule" aria-hidden="true"></span>
+              <span class="tag-meta mono">Open</span>
+            </div>
+
+            <div class="contact-grid">
+              <div class="contact-copy">
+                <h2 id="contact-title">Have a system that has to hold up?</h2>
+                <p class="contact-lede">
+                  I'm open to software engineering roles, and to freelance work where
+                  the interface and the system behind it both matter.
+                </p>
+                <a class="contact-email" href="mailto:sethankuadibi@gmail.com">
+                  sethankuadibi@gmail.com
+                </a>
+              </div>
+
+              <div class="contact-block">
+                <div class="contact-row">
+                  <span class="mono">GitHub</span>
+                  <a href="https://github.com/sethankuadibi" target="_blank" rel="noreferrer">
+                    github.com/sethankuadibi <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+                <div class="contact-row">
+                  <span class="mono">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/anku-seth-570519371" target="_blank" rel="noreferrer">
+                    linkedin.com/in/anku-seth-570519371 <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+                <div class="contact-row">
+                  <span class="mono">CV</span>
+                  <a href="./assets/seth-adibi-anku-cv.pdf" download>Download PDF <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="contact-row">
+                  <span class="mono">Location</span>
+                  <span class="contact-static">Accra, Ghana · GMT</span>
+                </div>
+                <p class="stamp stamp-block mono">Available for work</p>
+              </div>
+            </div>
           </div>
         </section>
       </main>
+
+      <footer class="site-footer">
+        <div class="wrap footer-grid mono">
+          <span>© 2026 Seth Adibi Anku</span>
+          <span>Accra, Ghana</span>
+          <span>Sheet A-01 · Rev 02</span>
+          <a href="#top">Back to top ↑</a>
+        </div>
+      </footer>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </body>
 </html>
